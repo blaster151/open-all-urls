@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Open All URLs",
+  "version": "1.0",
+  "description": "Open all URLs from clipboard (Alt+V) or copy all tab URLs to clipboard (Alt+C)",
+  "permissions": [
+    "tabs",
+    "clipboardRead",
+    "clipboardWrite",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-urls": {
+      "suggested_key": {
+        "default": "Alt+V"
+      },
+      "description": "Open all URLs from clipboard in new tabs"
+    },
+    "copy-urls": {
+      "suggested_key": {
+        "default": "Alt+C"
+      },
+      "description": "Copy all tab URLs to clipboard"
+    }
+  }
+}
