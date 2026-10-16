@@ -25,5 +25,9 @@
       },
       "description": "Copy all tab URLs to clipboard"
     }
+  },
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "Open All URLs: Alt+V to open, Alt+C to copy"
   }
 }
